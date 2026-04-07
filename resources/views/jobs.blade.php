@@ -4,7 +4,7 @@
     <x-slot:feet>{{ $greeting }}</x-slot:feet>
     <ul>
 @foreach ($jobs as $job)
-<a href="/jobs/{{ $job['id'] }}"><li><strong>{{ $job['title'] }}</strong> - ${{ number_format($job['salary']) }}</li></a>
+      <a href="/jobs/{{ $job['id'] }}"><li><strong>{{ $job['title'] }}</strong> - ${{ number_format($job['salary']) }}</li></a>
     
 @endforeach
 </ul>

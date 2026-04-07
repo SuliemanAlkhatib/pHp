@@ -40,6 +40,7 @@
                 </svg>
                 SSL certificates.
               </dt>
+              {{ $feet }}
               <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
             </div>
             <div class="relative pl-9">

@@ -22,7 +22,7 @@
            {{$head}}
            <x-Home href="/" :active="request()->is('/')">home</x-Home>
               <x-Home href="/contacts" :active="request()->is('contacts')" >contact</x-Home>
-              <x-Home href="/about" :active="request()->is('about')">about</x-Home>
+              <x-Home href="/jobs" :active="request()->is('jobs')">jobs</x-Home>
 
             <div class="relative pl-9">
               <dt class="inline font-semibold text-gray-900">
@@ -40,7 +40,6 @@
                 </svg>
                 SSL certificates.
               </dt>
-              {{ $feet }}
               <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
             </div>
             <div class="relative pl-9">

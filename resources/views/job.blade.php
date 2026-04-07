@@ -1,6 +1,7 @@
 <x-layout>
       <h1>Job</h1>
-    <x-slot:head>{{ $job['title'] }}</x-slot:head>
+    <p>{{ $job['title'] }}</p>
+    <p> this job pays ${{ ($job['salary']) }} per year</p>
     
     
 </x-layout>

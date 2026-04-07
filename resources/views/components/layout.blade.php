@@ -19,7 +19,6 @@
           <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">{{$slot}}</p>
           <p class="mt-6 text-lg/8 text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
           <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none bg-gray-100">
-           {{$head}}
            <x-Home href="/" :active="request()->is('/')">home</x-Home>
               <x-Home href="/contacts" :active="request()->is('contacts')" >contact</x-Home>
               <x-Home href="/jobs" :active="request()->is('jobs')">jobs</x-Home>

@@ -1,8 +1,7 @@
-
-
 <?php 
-use Illuminate\Support\Arr;
 namespace App\Models;
+use Illuminate\Support\Arr;
+
 
 
 class Job{
@@ -33,10 +32,15 @@ class Job{
 
          'title'=>'Node Developer',
         'salary'=> 50000
-        ]];
-        public static function find($id): array{
+        ]];}
+        public static function find(int $id): array{
             $jobs = self::all();
-            return Arr::first($jobs, fn($job) => $job['id'] == $id);  
+            $job = Arr::first($jobs, fn($job) => $job['id'] == $id);  
+            if(!$job){
+                abort(404);
+            }else{
+                return $job;
+            }
     }
 }
-}
+?>

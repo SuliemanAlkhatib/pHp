@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/posts',function (){
-  $posts = Post::all();
+  $posts = Posts::all();
   return view('posts',['posts'=>$posts]);
 });
 Route::get('/contacts',function (){

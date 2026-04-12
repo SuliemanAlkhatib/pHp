@@ -29,4 +29,10 @@ Route::get('/jobs/{id}',function ($id) {
         return view('job',['job'=>$job] );    
 });
 
+Route::get('/posts/{id}',function ($id) {
+   
+   $post =  Post::find($id);
+        return view('post',['post'=>$post] );    
+});
+
     

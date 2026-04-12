@@ -21,6 +21,7 @@
            <x-Home href="/" :active="request()->is('/')">home</x-Home>
               <x-Home href="/contacts" :active="request()->is('contacts')" >contact</x-Home>
               <x-Home href="/jobs" :active="request()->is('jobs')">jobs</x-Home>
+              <x-Home href="/posts" :active="request()->is('posts')">posts</x-Home>
 
             
             
